@@ -46,7 +46,7 @@ uint8_t DS18B20_Reset(void)
 
     // 步骤3：检测DS18B20的存在脉冲（正常会拉低总线60~240us）
     printf("【DS18B20调试】检测存在脉冲（等待总线拉低）...\r\n");
-    while (DS18B20_PIN_READ && retry < 200)  // DS18B20_PIN_READ=1表示总线未拉低
+    while (DS18B20_PIN_READ && retry < 220)  // DS18B20_PIN_READ=1表示总线未拉低
     {
         retry++;
         delay_us(1);

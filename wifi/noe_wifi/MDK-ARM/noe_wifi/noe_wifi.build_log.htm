@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2, 3, LIC=65ISZ-JN9QM-LQF0Q-NYKJF-1BVKK-DDEB5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\ZhuanZ\Desktop\ycz\wifi\noe_wifi\MDK-ARM\noe_wifi.uvprojx
+Project File Date:  01/18/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+Build target 'noe_wifi'
+compiling esp8266.c...
+esp8266.c(748): warning:  #223-D: function "atoi" declared implicitly
+      esp_status = atoi(status_start);  // 转换为数字（1=未获取IP�?2=已获取IP�?3=已建立TCP/UDP连接�?
+esp8266.c(830): warning:  #186-D: pointless comparison of unsigned integer with zero
+      else if (id >= ID_NO_0 && id <= ID_NO_4)
+esp8266.c(806): warning:  #550-D: variable "conn_result"  was set but never used
+      bool conn_result = false;
+esp8266.c(981): warning:  #225-D: the format string ends before this argument
+               
+QTT_USER_NAME, 
+QTT_CLIENT_ID);
+esp8266.c(1059): warning:  #223-D: function "atoi" declared implicitly
+          temp_data.light = atoi(light_str);
+esp8266.c(1199): warning:  #225-D: the format string ends before this argument
+               
+QTT_USER_NAME, 
+QTT_CLIENT_ID);
+esp8266.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=28624 RO-data=1772 RW-data=36 ZI-data=5188  
+FromELF: creating hex file...
+"noe_wifi\noe_wifi.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_noe_wifi
+  D:\keil5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
